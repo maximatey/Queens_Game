@@ -1,9 +1,13 @@
 # Queens Game Solver
+> Task Seleksi IRK created by Alex
 
+versi **9 Juli 2024**
 ## 💡 Latar Belakang
 Sebagai seorang mahasiswa, tentu kita tidak asing dengan platform LinkedIn sebagai platform karir. Tapi apakah Anda tahu bahwa LinkedIn menyediakan permainan-permainan untuk penggunanya? Salah satu permainan yang disediakan adalah Queens Game. Objektif dari game ini adalah mengalokasikan sebuah “Queen” pada setiap area warna dengan aturan-aturan tertentu. 
 
-![image thumbnail](https://github.com/maximatey/Queens_Game/assets/46923948/3ce0a64a-3a5d-43bd-8357-bd2f6b103ec1)
+<div align=center>
+<img src="./img/thumbnail.png">
+</div>
 
 <br>
 
@@ -15,15 +19,19 @@ Objektif permainan adalah mengalokasikan sebuah “Queen” pada setiap region w
 Setiap kolom dan baris hanya diperbolehkan teralokasi sebuah “Queen”.
 Tidak ada “Queen” yang saling bersentuhan (8 tiles sekitar sebuah “Queen”).
 
-![image](https://github.com/maximatey/Queens_Game/assets/46923948/ab29cb0f-6f0d-4b89-b296-9a2dce88329d)
-
+<div align=center>
+<img src="./img/example_1.png">
+</div>
 Gambar di atas merupakan contoh restriksi alokasi Queen berdasarkan aturan 2 dan 3. (Q = Objek Queen, x = posisi Queen lain yang tidak mungkin)
 
-![image](https://github.com/maximatey/Queens_Game/assets/46923948/09361852-8eff-43d2-a692-eea6e05eb207)
-
+<div align=center>
+<img src="./img/example_2.png">
+</div>
 Gambar di atas merupakan contoh restriksi alokasi Queen berdasarkan aturan 1, 2, dan 3. (Q = Objek Queen, x = posisi Queen lain yang tidak mungkin)
 
-![image](https://github.com/maximatey/Queens_Game/assets/46923948/299eac14-32d8-484b-bb3d-666f043a8067)
+<div align=center>
+<img src="./img/example_3.png">
+</div>
 
 Gambar di atas merupakan contoh solusi yang memungkinkan dari state papan catur tersebut. (Q = Objek Queen, x = posisi Queen lain yang tidak mungkin)
 
@@ -36,12 +44,13 @@ Perlu dicatat bahwa sebuah region warna akan selalu terhubung. Tidak ada sebuah 
 
 2. Input dari program berupa sebuah file .txt yang berisi dimensi papan, jumlah region warna yang ada, dan konfigurasi warna papan. Warna papan direpresentasikan dengan sebuah alfanumerik.
     Contoh:
-    4 5
-    3
-    A A A @ @
-    A A 2 @ @
-    A 2 2 2 @
-    2 2 2 2 @
+    <br>
+    4 5<br>
+    3<br>
+    A A A @ @<br>
+    A A 2 @ @<br>
+    A 2 2 2 @<br>
+    2 2 2 2 @<br>
 
 Pada contoh input di atas, barisan pertama diisi dengan dimensi papan, baris kedua diisi dengan jumlah warna yang ada di papan (region warna), dan baris baris berikutnya diisi dengan konfigurasi warna papan sesuai dengan input barisan sebelumnya. 
 
@@ -82,7 +91,19 @@ Pada contoh input di atas, barisan pertama diisi dengan dimensi papan, baris ked
 4. Jika terdapat pertanyaan dapat menghubungi LINE `maximatey`.
 
 ## 📌 Penilaian
-![image](https://github.com/maximatey/Queens_Game/assets/46923948/ca1b4e03-c301-488a-850b-870c812f4725)
+| Fitur Wajib | Skor Maksimum |
+| ------------- | ------------- |
+| Algoritma | 400 |
+| Program | 300 |
+| Solusi | 400 |
+| GUI | 100 |
+
+| Bonus | Skor Maksimum |
+| ------------- | ------------- |
+| Algoritma Unik | 300 |
+| Modifikasi Papan | 200 |
+| Modifikasi Piece | 600 |
 
 
+**TOTAL SKOR : 2300**
 <br>
