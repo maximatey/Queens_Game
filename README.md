@@ -1,7 +1,7 @@
 # Queens Game Solver
 > Task Seleksi IRK created by Alex
 
-versi **9 Juli 2024**
+versi **15 Juli 2024**
 ## 💡 Latar Belakang
 Sebagai seorang mahasiswa, tentu kita tidak asing dengan platform LinkedIn sebagai platform karir. Tapi apakah Anda tahu bahwa LinkedIn menyediakan permainan-permainan untuk penggunanya? Salah satu permainan yang disediakan adalah Queens Game. Objektif dari game ini adalah mengalokasikan sebuah “Queen” pada setiap area warna dengan aturan-aturan tertentu. 
 
@@ -42,7 +42,7 @@ Perlu dicatat bahwa sebuah region warna akan selalu terhubung. Tidak ada sebuah 
 1. Algoritma yang digunakan untuk pencarian solusi.
     Algoritma yang dapat digunakan adalah salah satu dari: BFS; DFS; atau algoritma lain yang telah diajarkan di mata kuliah Strategi Algoritma. Algoritma harus diimplementasikan sendiri.
 
-2. Input dari program berupa sebuah file .txt yang berisi dimensi papan, jumlah region warna yang ada, dan konfigurasi warna papan. Warna papan direpresentasikan dengan sebuah alfanumerik.
+2. Input dari program berupa sebuah file .txt yang berisi dimensi papan, jumlah region warna yang ada, dan konfigurasi warna papan. Warna papan direpresentasikan dengan sebuah character (alfanumerik atau karakter spesial).
     Contoh:
     <br>
     4 5<br>
@@ -60,12 +60,18 @@ Pada contoh input di atas, barisan pertama diisi dengan dimensi papan, baris ked
 
 ### Bonus (1100 Poin)
 1. Algoritma tambahan di luar algoritma yang diajarkan pada mata kuliah Strategi Algoritma (Tetap harus mengimplementasikan algoritma pada fitur wajib No. 1). Pengguna dapat mengubah algoritma yang digunakan melalui GUI.
-2. Modifikasi Papan secara langsung pada GUI (Modifikasi termasuk region warna dan ukuran pada papan).
-3. Objek Queen yang dialokasikan pada papan dapat diubah mencari Chess piece standar permainan catur. Aturan warna tetap berlaku. Objek yang harus diimplementasikan adalah:
+2. Modifikasi Papan secara langsung pada GUI (Modifikasi termasuk region warna dan ukuran pada papan). Metode yang digunakan untuk mengubah ukuran papan dan warna pada tiap cell dibebaskan, pastikan semua aturan berlaku saat dijalankan.
+3. Objek Queen yang dialokasikan pada papan dapat diubah menjadi Chess piece standar permainan catur. Aturan/restriksi peletakan objek juga mengikut aturan gerak jenis objek tersebut. Aturan warna tetap berlaku. Objek yang harus diimplementasikan adalah:
     * Queen standar catur
+      ~> Tidak ada objek lain yang sebaris, sekolom, dan sediagonal dengan suatu objek
     * Rook
+      ~> Tidak ada objek lain yang sebaris dan sekolom dengan suatu objek
     * Bishop
+      ~> Tidak ada objek lain yang sediagonal dengan suatu objek
     * Knight
+      ~> Tidak ada objek lain yang berada pada cell yang dapat ditempati suatu objek sesuai dengan aturan gerak Knight pada catur.
+      
+   Modifikasi piece/objek berlaku untuk semua objek dipapan (kalau rook ya 1 papan semua objeknya rook, dst). Jadi solusi papan cukup memiliki 1 jenis objek/piece (kalau pengen tiap region warna pun boleh sih :D)
 
 
 
